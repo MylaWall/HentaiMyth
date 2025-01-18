@@ -1,7 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Game - Hentai Myth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta button {
+            background-color: #4e54c8;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #8f94fb;
+        }
+
+        .showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .character-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .character-card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .character-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .character-card p {
+            margin: 0 10px 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Hentai Myth</h1>
+        <p>Summon your heroes, conquer the odds!</p>
+    </header>
+
+    <div class="container">
+        <!-- Call to Action -->
+        <div class="cta">
+            <button  onclick="location.href='game.html'">Play Now</button>
+        </div>
+
+        <!-- Character Showcase -->
+        <h2>Meet the Heroes</h2>
+        <div class="showcase">
+            <div class="character-card">
+                <img src="Assets/S1/c1.jpg" alt="Hero 1">
+                <h3>Aurora</h3>
+                <p>The radiant queen of light, guiding her allies to victory.</p>
+            </div>
+            <div class="character-card">
+                <img src="Assets/S1/c2.png" alt="Hero 2">
+                <h3>Nyx</h3>
+                <p>A shadowy rogue who strikes from the darkness.</p>
+            </div>
+            <div class="character-card">
+                <img src="Assets/S1/c3.png" alt="Hero 3">
+                <h3>Zephyr</h3>
+                <p>The wind’s chosen champion, swift and unyielding.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Hentai Myth. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function startGame() {
+            alert('Starting the game! This can lead to your game logic or a new page.');
+        }
+    </script>
 </body>
 </html>
